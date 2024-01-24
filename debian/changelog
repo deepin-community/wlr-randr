@@ -1,5 +1,48 @@
-template-repository (1.0-1) unstable; urgency=medium
+wlr-randr (0.3.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Diederik de Haas ]
+  * Update to new wlr-randr home: https://sr.ht/~emersion/wlr-randr/
+    - d/control: Point to https://sr.ht/~emersion/wlr-randr/
+    - d/copyright: Point to https://git.sr.ht/~emersion/wlr-randr/
+    - d/watch: Update to watch https://git.sr.ht/~emersion/wlr-randr/
+  * d/control: Declare compliance with Policy 4.6.2; no changes needed
+
+  [ Arnaud Ferraris ]
+  * New upstream version 0.3.0
+    (Closes: #1041965)
+  * d/gbp.conf: adapt to current usage
+  * debian: add upstream metadata
+
+ -- Arnaud Ferraris <aferraris@debian.org>  Tue, 25 Jul 2023 21:55:20 +0200
+
+wlr-randr (0.2.0-2) unstable; urgency=medium
+
+  * d/tests: use pixman renderer and handle gracefully
+    absence of xwayland (Closes: #1002625)
+  * d/changelog: fix a typo.
+
+ -- Henry-Nicolas Tourneur <debian@nilux.be>  Sat, 01 Jan 2022 22:44:53 +0000
+
+wlr-randr (0.2.0-1) unstable; urgency=medium
+
+  * New upstream version 0.2.0
+  * d/control: bump Standards-Version to 4.6.0 (no changes needed)
+
+ -- Henry-Nicolas Tourneur <debian@nilux.be>  Wed, 25 Aug 2021 16:02:31 +0000
+
+wlr-randr (0.1.0-1) unstable; urgency=medium
+
+  * d/control: update maintainers/uploaders fields
+  * added watch file
+  * New upstream version 0.1.0
+  * Removed lintian override debian-watch-file-is-missing
+
+ -- Henry-Nicolas Tourneur <debian@nilux.be>  Sun, 15 Nov 2020 20:20:20 +0000
+
+wlr-randr (0.0.0+git20200721-1) unstable; urgency=medium
+
+  * Initial release (Closes: #965963)
+
+ -- Henry-Nicolas Tourneur <debian@nilux.be>  Tue, 21 Jul 2020 17:41:27 +0000

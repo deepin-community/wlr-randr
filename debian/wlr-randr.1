@@ -1,0 +1,42 @@
+.TH USAGE: "1" "July 2020" "usage: wlr-randr [options]" "User Commands"
+.SH NAME
+usage: \- Utility to manage outputs of a Wayland compositor
+.SH SYNOPSIS
+.B wlr\-randr 
+[options]
+.SH DESCRIPTION
+Command line interface which allows setting the size, scale,  orientation of
+the output for a screen. 
+.br
+This utility requires the compositor to implement the wlr output management
+protocol. 
+.br
+Currently, only wlroots based compositor support this protocol.
+.br
+.SH OPTIONS
+.IP --help
+Print out a summary of the usage and exit.
+
+.IP --dryrun
+Performs all the actions specified except that no changes are made.
+
+.IP "--output <name>" 
+Selects an output to reconfigure. This option must be set when making changes to the output using below options.
+
+.IP --on
+Enables the output.
+
+.IP --off
+Disables the output.
+
+.IP "--mode | --custom-mode <width>x<height>[@<refresh>Hz]"
+Set output resolution and, optionally, refresh rate.
+
+.IP "--pos <x>,<y>" 
+Position the output within the screen using pixel coordinates. In case reflection or rotation is applied, the translation is applied after the effects.
+
+.IP "--transform normal|90|180|270|flipped|flipped\-90|flipped\-180|flipped\-270"
+Transform the output by rotating it following the provided value.
+
+.IP "--scale <factor>" 
+Changes the dimensions of the output picture. Values superior to 1 will lead to a compressed screen (screen dimension bigger than the dimension of the output mode), and values below 1 leads to a zoom in on the output.

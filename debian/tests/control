@@ -1,0 +1,3 @@
+Tests: run-test
+Restrictions: allow-stderr 
+Depends: libgl1-mesa-dri, phoc, @

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+export WLR_BACKENDS=headless
+export WLR_RENDERER=pixman
+export WLR_LIBINPUT_NO_DEVICES=1
+export XDG_RUNTIME_DIR=/tmp
+
+cat << EOF > /tmp/phoc.ini
+[core]
+xwayland=false
+EOF
+
+phoc --config /tmp/phoc.ini --exec "wlr-randr --output HEADLESS-1 --transform 90"
